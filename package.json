@@ -23,14 +23,14 @@
   },
   "scripts": {
     "build": "bower install && grunt compile",
+    "bower": "bower install",
     "watch": "grunt",
     "install-and-build": "npm install && npm run build",
     "test": "mocha test"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "bower": "~1.8.0",
+    "bower": "^1.8.4",
     "grunt": "~0.4.2",
     "grunt-angular-gettext": "^0.2.15",
     "grunt-cli": "~0.1.11",
@@ -41,6 +41,7 @@
     "grunt-css": "~0.5.4",
     "grunt-macreload": "*",
     "grunt-markdown": "~0.5.0",
-    "grunt-replace": "^1.0.1"
+    "grunt-replace": "^1.0.1",
+    "mocha": "^2.4.5"
   }
 }
