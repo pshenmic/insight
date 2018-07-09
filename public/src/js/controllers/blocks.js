@@ -80,6 +80,11 @@ angular.module('insight.blocks').controller('BlocksController',
       $rootScope.titleDetail = block.height;
       $rootScope.flashMessage = null;
       $scope.loading = false;
+
+      if(typeof block.bits === 'number') {
+          block.bits = block.bits.toString(16);
+      }
+
       $scope.block = block;
     }, function(e) {
       if (e.status === 400) {
